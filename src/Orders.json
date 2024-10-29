@@ -1,0 +1,13 @@
+[
+    {
+      "id": 1,
+      "customer": "Alice",
+      "items": ["Laptop"]
+    },
+    {
+      "id": 2,
+      "customer": "Bob",
+      "items": ["Smartphone", "Headphones"]
+    }
+  ]
+  

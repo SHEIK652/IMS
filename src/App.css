@@ -1,0 +1,182 @@
+/* General Page Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F5F7; /* Softer background for dashboard */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 1550px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  padding: 40px;
+  color: #333;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #264653;
+  text-align: left;
+  border-bottom: 2px solid #E9ECEF;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color:#1E2952;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Dashboard-style navbar */
+}
+
+nav button {
+  background-color: #4C516D;
+  color: #fff;
+  border: none;
+  padding: 14px 35px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  min-width: 150px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+  background-color: #E76F51;
+  transform: translateY(-3px);
+}
+
+nav button:focus {
+  outline: 2px solid #F4A261;
+}
+
+nav button.active {
+  background-color: #E76F51;
+}
+
+/* Inventory & Orders List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E9ECEF;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08); /* More prominent shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Hover effect */
+}
+
+li .buttons {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  align-items: center;
+}
+
+li button {
+  background-color: #E63946;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li button:hover {
+  background-color: #D62828;
+  transform: scale(1.08); /* Slightly larger hover effect */
+}
+
+li button:focus {
+  outline: 2px solid #264653;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+form input {
+  border: 1px solid #CED4DA;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+  background-color: #1E2952;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #264653;
+  transform: translateY(-3px);
+}
+
+form button:focus {
+  outline: 2px solid #E76F51;
+}
+
+.submit {
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 30px;
+    margin: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  form input {
+    font-size: 0.95rem;
+  }
+
+  li {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  li .buttons {
+    justify-content: center; /* Center the buttons on smaller screens */
+  }
+}
