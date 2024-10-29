@@ -2,6 +2,7 @@
   "name": "ims-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/SHEIK652/IMS.git",  // Consider changing this to your deployed URL
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
